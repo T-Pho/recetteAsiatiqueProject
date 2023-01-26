@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './components/recipe-item/recipe-item.component';
 import { RecipePageComponent } from './components/recipe-page/recipe-page.component';
-import { RouterModule } from '@angular/router';
+import { RecipesRoutingModule } from './recipes-routing.module';
 
 
 
@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RecipesRoutingModule
   ],
   exports:[
     RecipeListComponent,
