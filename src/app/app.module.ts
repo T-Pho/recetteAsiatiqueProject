@@ -1,5 +1,5 @@
 import { registerLocaleData } from '@angular/common';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import * as fr from '@angular/common/locales/fr';
@@ -11,7 +11,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, CoreModule, LandingPageModule],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'fr-FR' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {

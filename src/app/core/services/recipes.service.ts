@@ -86,4 +86,13 @@ export class recipesService {
         "stars": 5
       }
   ]
+
+  getRecipeById(recipeId:number): Recipe{
+    const recipe = this.recipes.find(recipe => recipe.id === recipeId);
+    if (!recipe) {
+        throw new Error('Oups, pas de recette!');
+    } else {
+        return recipe;
+    }
+  }
 }

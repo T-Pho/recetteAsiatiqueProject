@@ -20,8 +20,7 @@ export class RecipeCardComponent implements OnInit {
   }
 
   onViewRecipe() {
-    this.router.navigateByUrl(`recipe/${this.recipe.id}`);
-    
+    this.router.navigateByUrl(`recipes/${this.recipe.id}`);
   }
 
 }

@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { RecipePageComponent } from './components/recipe-page/recipe-page.component';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
+import { LandingPageComponent } from '../landing-page/components/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: ':Id', component: RecipePageComponent },
-  { path: '', component: RecipeListComponent },
+  { path: 'recipes/:id', component: RecipePageComponent },
+  { path: 'recipes', component: RecipeListComponent },
+  { path: '', component: LandingPageComponent },
   
 ]
 
@@ -16,8 +18,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports:[
-    RouterModule
-]
+exports:[
+        RouterModule
+    ]
 })
 export class RecipesRoutingModule { }
