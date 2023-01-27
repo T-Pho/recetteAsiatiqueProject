@@ -1,0 +1,12 @@
+<div class="recipe-card" >
+    <h2>{{ recipe.title | uppercase}}</h2>
+    <p>Mis en ligne le {{ recipe.createdDate | date:'medium' }}</p>
+    <img [src]="recipe.imageUrl" [alt]="recipe.title" />
+    <p>{{ recipe.description }}</p>
+    
+    <p>
+      <span [ngStyle]="{color:'rgb(0,'+recipe.stars+', 0)'}">⭐ {{ recipe.stars }}</span></p>
+      <button (click)="onViewRecipe()">View</button>
+  </div>
+  
+k

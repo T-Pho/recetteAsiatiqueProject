@@ -3,7 +3,7 @@ export class Recipe{
     title!: string;
     description!: string;
     imageUrl!: string;
-    createdDate!: string;
+    createdDate!: Date;
     stars!: number;
     
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RecipeListComponent } from './components/recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './components/recipe-item/recipe-item.component';
+import { RecipeCardComponent } from './components/recipe-card/recipe-card.component';
 import { RecipePageComponent } from './components/recipe-page/recipe-page.component';
 import { RecipesRoutingModule } from './recipes-routing.module';
 
@@ -10,7 +10,7 @@ import { RecipesRoutingModule } from './recipes-routing.module';
 @NgModule({
   declarations: [
     RecipeListComponent,
-    RecipeItemComponent,
+    RecipeCardComponent,
     RecipePageComponent
   ],
   imports: [
@@ -19,7 +19,7 @@ import { RecipesRoutingModule } from './recipes-routing.module';
   ],
   exports:[
     RecipeListComponent,
-    RecipeItemComponent,
+    RecipeCardComponent,
     RecipePageComponent
   ]
 })
