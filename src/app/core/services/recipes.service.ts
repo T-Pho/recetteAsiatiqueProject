@@ -7,69 +7,50 @@ import { Recipe } from '../models/recipe.model';
 export class recipesService {
   recipes: Recipe[]=[
     {
-        "id":1,
-        "stars":5,
-        "context": "http://schema.org/",
-        "type": "Recipe",
-        "name": "Pad Thai",
-        "author": {
-            "type": "Person",
-            "name": "John Smith"
-        },
-        "datePublished": "2022-01-01",
-        "description": "A classic Thai dish made with rice noodles, shrimp, and a variety of vegetables.",
-        "image": "https://www.example.com/pad-thai.jpg",
-        "recipeIngredient": [
-            "8 oz rice noodles",
-            "2 tbsp vegetable oil",
-            "3 cloves garlic, minced",
-            "1 lb shrimp, peeled and deveined",
-            "4 green onions, chopped",
-            "1 red bell pepper, thinly sliced",
-            "2 eggs, lightly beaten",
-            "1/4 cup fish sauce",
-            "3 tbsp soy sauce",
-            "2 tbsp brown sugar",
-            "1 lime, juiced",
-            "1/4 cup chopped peanuts",
-            "1/4 cup chopped cilantro"
-        ],
-        "recipeInstructions": [
-            {
-                "type": "HowToStep",
-                "text": "Soak the rice noodles in warm water for 30 minutes. Drain and set aside."
-            },
-            {
-                "type": "HowToStep",
-                "text": "Heat the oil in a large wok or skillet over medium-high heat. Add the garlic and shrimp, and cook for 2-3 minutes, or until the shrimp are pink and cooked through."
-            },
-            {
-                "type": "HowToStep",
-                "text": "Add the green onions, bell pepper, and eggs, and stir-fry for 1-2 minutes."
-            },
-            {
-                "type": "HowToStep",
-                "text": "Add the fish sauce, soy sauce, brown sugar, and lime juice, and stir-fry for 1-2 minutes more."
-            },
-            {
-                "type": "HowToStep",
-                "text": "Add the soaked noodles and toss until they are well coated and heated through."
-            },
-            {
-                "type": "HowToStep",
-                "text": "Top with chopped peanuts and cilantro, and serve."
-            }
-        ],
-        "nutrition": {
-            "type": "NutritionInformation",
-            "calories": "400 calories",
-            "fatContent": "20g",
-            "carbohydrateContent": "40g",
-            "proteinContent": "20g"
-        },
-        "recipeCategory": "Asian",
-        "recipeCuisine": "Thai"
+      "id": 1,
+      "stars": 5,
+      "name": "Maki au thon",
+      "author":  "John Doe",
+      "datePublished": "2023-01-30",
+      "description": "Les makis au thon sont des rouleaux de sushi remplis de thon cru, de riz et d'algues nori.",
+      "prepTime": "PT20M",
+      "cookTime": "PT10M",
+      "totalTime": "PT30M",
+      "recipeYield": "4 portions",
+      "recipeCategory": "Plat principal",
+      "recipeCuisine": "Japonaise",
+      "image": "https://www.example.com/thon-maki.jpg",
+      "nutrition": {
+        "servingSize": "100g",
+        "calories": "250 calories",
+        "fatContent": "10g",
+        "carbohydrateContent": "30g",
+        "proteinContent": "15g"
+      },
+      "recipeIngredient": [
+        "200g de thon cru",
+        "2 tasses de riz à sushi",
+        "4 feuilles d'algues nori",
+        "1 avocat",
+        "1 concombre",
+        "1/4 tasse de vinaigre de riz",
+        "1 cuillère à soupe de sucre",
+        "1 cuillère à soupe de sel"
+      ],
+      "recipeInstructions": [
+        "Cuire le riz à sushi selon les instructions sur l'emballage.",
+        "Mélanger le vinaigre de riz, le sucre et le sel dans une petite casserole.",
+        "Chauffer à feu moyen jusqu'à ce que le sucre et le sel soient dissous.",
+        "Laisser refroidir complètement.",
+        "Couper le thon, l'avocat et le concombre en fines lanières.",
+        "Placer une feuille d'algue nori sur un tapis à sushi en bambou.",
+        "Étaler une couche uniforme de riz sur l'algue nori, en laissant une bordure de 1 cm à l'extrémité supérieure.",
+        "Disposer les lanières de thon, d'avocat et de concombre en une ligne sur le riz.",
+        "Rouler le tapis à sushi pour former un rouleau serré.",
+        "Couper le rouleau en tranches égales avec un couteau tranchant et humide."
+      ]
     }
+    
     
   ]
 

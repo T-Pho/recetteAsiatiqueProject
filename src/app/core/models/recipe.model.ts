@@ -1,21 +1,21 @@
-import { Author } from './author.model';
-import { Nutrition } from './nutrition.model';
-import { RecipeInstruction } from './recipe-instruction.model';
-
+import { Nutrition } from "./nutrition.model";
 
 export class Recipe {
     id!: number;
-    stars!: number;
-    context!: string;
-    type!: string;
+    stars!:number;
     name!: string;
-    author!: Author;
+    author!: string;
     datePublished!: string;
     description!: string;
-    image!: string;
-    recipeIngredient!: string[];
-    recipeInstructions!: RecipeInstruction[];
-    nutrition!: Nutrition;
+    prepTime!: string;
+    cookTime!: string;
+    totalTime!: string;
+    recipeYield!: string;
     recipeCategory!: string;
     recipeCuisine!: string;
-}
+    image!: string;
+    nutrition!: Nutrition;
+    recipeIngredient!: string[];
+    recipeInstructions!: string[];
+  }
+  
