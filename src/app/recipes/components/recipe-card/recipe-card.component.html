@@ -1,7 +1,7 @@
 <div class="recipe-card" >
-    <h2>{{ recipe.title | uppercase}}</h2>
-    <p>Mis en ligne le {{ recipe.createdDate | date:'medium' }}</p>
-    <img [src]="recipe.imageUrl" [alt]="recipe.title" />
+    <h2>{{ recipe.name| uppercase}}</h2>
+    <p>Mis en ligne le {{ recipe.datePublished | date:'medium' }}</p>
+    <img [src]="recipe.image" [alt]="recipe.name" />
     <p>{{ recipe.description }}</p>
     
     <p>
