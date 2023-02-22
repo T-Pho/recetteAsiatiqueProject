@@ -1,8 +1,8 @@
 export class Nutrition {
-        servingSize!: string;
+        // servingSize!: string;
         calories!: string;
-        fatContent!: string;
-        carbohydrateContent!: string;
-        proteinContent!: string;
+        // fatContent!: string;
+        // carbohydrateContent!: string;
+        // proteinContent!: string;
 }
 

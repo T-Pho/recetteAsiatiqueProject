@@ -4,6 +4,7 @@ export class Recipe {
     id!: number;
     stars!:number;
     name!: string;
+    image!: string;
     author!: string;
     datePublished!: string;
     description!: string;
@@ -13,7 +14,6 @@ export class Recipe {
     recipeYield!: string;
     recipeCategory!: string;
     recipeCuisine!: string;
-    image!: string;
     nutrition!: Nutrition;
     recipeIngredient!: string[];
     recipeInstructions!: string[];
