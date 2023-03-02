@@ -6,7 +6,7 @@ import { recipesService } from 'src/app/core/services/recipes.service';
 @Component({
   selector: 'app-recipe-page',
   templateUrl: './recipe-page.component.html',
-  styleUrls: ['./recipe-page.component.css'],
+  styleUrls: ['./recipe-page.component.scss'],
 })
 export class RecipePageComponent implements OnInit {
   recipe!: Recipe;
